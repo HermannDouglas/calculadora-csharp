@@ -45,18 +45,5 @@ namespace Calculadora
                 // lblResultado.Text = "Selecione uma operação matemática.";
             }
         }
-
-        private Boolean verificaTbxNumero(TextBox tbxNumero)
-        {
-            if(tbxNumero.Text != "")
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
     }
 }
