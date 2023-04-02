@@ -9,7 +9,7 @@ namespace Calculadora
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(tbxNumero1.Text) )
+            if (String.IsNullOrEmpty(tbxNumero1.Text))
             {
                 MessageBox.Show("Por favor, informe o primeiro número!");
             }
@@ -19,9 +19,11 @@ namespace Calculadora
                 MessageBox.Show("Por favor, informe o segundo número!");
             }
 
-
             double valor1 = Convert.ToDouble(tbxNumero1.Text);
             double valor2 = Convert.ToDouble(tbxNumero2.Text);
+
+            //Double.TryParse(tbxNumero1.Text, out double valor1);
+            //Double.TryParse(tbxNumero1.Text, out double valor2);
 
             if (rdbtnAdicao.Checked)
             {
@@ -42,7 +44,6 @@ namespace Calculadora
             else
             {
                 MessageBox.Show("Selecione uma operação matemática!");
-                // lblResultado.Text = "Selecione uma operação matemática.";
             }
         }
     }
