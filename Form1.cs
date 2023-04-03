@@ -19,11 +19,15 @@ namespace Calculadora
                 MessageBox.Show("Por favor, informe o segundo número!");
             }
 
-            double valor1 = Convert.ToDouble(tbxNumero1.Text);
-            double valor2 = Convert.ToDouble(tbxNumero2.Text);
+            // double valor1 = Convert.ToDouble(tbxNumero1.Text);
+            // double valor2 = Convert.ToDouble(tbxNumero2.Text);
 
             //Double.TryParse(tbxNumero1.Text, out double valor1);
             //Double.TryParse(tbxNumero1.Text, out double valor2);
+
+
+            double valor1 = Double.Parse(tbxNumero1.Text);
+            double valor2 = Double.Parse(tbxNumero2.Text);
 
             if (rdbtnAdicao.Checked)
             {
